@@ -1,0 +1,131 @@
+.Middle {
+  display: flex;
+}
+
+.RightNavbar {
+  display: none;
+}
+
+.BtnMedia {
+  display: none;
+}
+
+@media (max-width:1350px) {
+  .Middle {
+    display: none !important;
+  }
+
+  .RightNavbar {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 2000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .RightNavbar.Active {
+    left: 0;
+  }
+
+  .RightNavbar button {
+    width: 70px;
+    height: 70px;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    font-size: 30px;
+  }
+
+  .RightNavbar .Ul {
+    width: calc(100% - 70px);
+    height: 100%;
+    background-color: #4b59678f;
+    overflow: auto;
+    padding: 20px 0;
+  }
+
+  .BtnMedia {
+    display: inline-block !important;
+    background-color: transparent;
+    border: 0;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 10px;
+  }
+
+  .BtnMedia.Active {
+    opacity: 1;
+  }
+
+  .BtnMedia.InActive {
+    opacity: 0;
+  }
+
+  .RightNavbar .Ul ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  .RightNavbar .Ul ul li.DropDown span {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .RightNavbar .Ul ul li.DropDown span::after {
+    content: "\f078";
+    font-family: fontawesome;
+    margin-left: 10px;
+    color: #fff;
+  }
+
+  .RightNavbar .Ul>ul>li {
+    padding: 10px;
+    margin-bottom: 3px;
+    cursor: pointer;
+  }
+
+  .RightNavbar .Ul>ul>li a, .RightNavbar .Ul>ul>li span p {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+  }
+
+  .RightNavbar .Ul>ul>li.DropDown ul {
+    list-style: none;
+  }
+
+  .RightNavbar .Ul>ul>li.DropDown>ul, .RightNavbar .Ul>ul>li.DropDown>div {
+    background-color: #475665;
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .RightNavbar .Ul>ul>li.DropDown>ul.active, .RightNavbar .Ul>ul>li.DropDown>div.active {
+    padding: 20px;
+    height: fit-content;
+    border: 2px solid #3f4852;
+  }
+
+  .RightNavbar .Ul>ul>li.DropDown>ul ul {
+    background-color: #475665;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .RightNavbar .Ul>ul>li.DropDown>ul ul.active {
+    padding: 20px;
+    height: fit-content;
+    border: 2px solid #3f4852;
+  }
+}
+
+/*   content: "\f078"; */

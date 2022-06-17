@@ -1,0 +1,76 @@
+footer {
+  padding: 50px 0;
+  background-color: #1f242a;
+  color: #fff;
+}
+
+footer h2 a {
+  color: #fff;
+  font-weight: 700;
+}
+
+footer h5 {
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+footer h5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 20%;
+  height: 3px;
+  background-color: var(--MainColor);
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+footer ul li:hover {
+  transform: translateX(10px);
+}
+
+footer ul li a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer ul li::before {
+  content: "\f054";
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+footer .INPUT {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+}
+
+footer .INPUT input {
+  width: calc(100% - 100px);
+  outline: 0;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+footer .INPUT button {
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 0 5px 5px 0;
+}

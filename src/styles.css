@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Anek Malayalam', sans-serif !important;
+  transition: .4s;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+:root {
+  --MainColor: #0ea2bd;
+  --SecondColor: #858d94;
+}
+
+/* To Run The FontAwesome */
+*:before {
+  font-family: 'FontAwesome';
+}
+
+/* To Run The FontAwesome ^^^^^ */
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam&display=swap');
+
+app-root {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/***** Main Var *****/
+
+.btn-Custom {
+  background-color: var(--MainColor);
+  color: #fff;
+  padding: 11px 25px;
+  border-radius: 5px;
+  border: 0;
+}
+
+.btn-Custom:hover {
+  background: rgba(14, 162, 189, 0.85);
+}
+
+/***** End Main Var *****/
